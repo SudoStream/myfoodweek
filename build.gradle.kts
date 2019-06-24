@@ -30,6 +30,8 @@ tasks.withType<KotlinCompile> {
     }
 }
 
+// https://bmuschko.github.io/gradle-docker-plugin/#tasks_2
+// dockerBuildImage
 docker {
     springBootApplication {
         baseImage.set("openjdk:8-alpine")
